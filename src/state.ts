@@ -26,10 +26,30 @@ type Man3 = {
     height: number
 }
 
-let man3: Man3[] = [
+let people: Man3[] = [
     {name: 'Dima', height: 1.78},
     {name: 'Sasha', height: 1.8}
 ]
+
+/*
+function sum(a:number, b:number):number {
+    return a + b
+}*/
+
+
+function toUpperCase(strings: string[]): string[] {
+    let result = strings.map(s => s.toUpperCase());
+    return result;
+}
+
+
+let createMan = ({name, height}:Man3):Man3 => {
+    return {
+        name,
+        height
+    };
+}
+
 
 
 export default 1
