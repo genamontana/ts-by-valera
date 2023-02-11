@@ -98,4 +98,4 @@ let createGarage = (): GarageType => {
 }
 
 
-export default 1
+export default 2
