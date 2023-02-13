@@ -98,4 +98,13 @@ let createGarage = (): GarageType => {
 }
 
 
+// Если нам нужно типизировать, то что возвращает функция, то сделать это через ReturnType
+let createManWithReturnType = (name: number, height: number) => {
+    return {
+        name, height
+    };
+}
+let a = typeof createManWithReturnType // (name: number, height: number)=> IMan
+export type CreateManType = ReturnType<typeof createManWithReturnType>
+
 export default 2
