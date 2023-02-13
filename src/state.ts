@@ -88,7 +88,7 @@ let createGarage = (): GarageType => {
             _cars.push(car);
         },
         logAllCarsNames() {
-            console.log('Cars in the garage: ');
+            console.log('command + p вылазит подсказка');
             _cars.forEach(c => console.log(c.model));
         },
         getAllCars() {
